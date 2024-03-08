@@ -1,0 +1,21 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: #4dff00ff;
+    transition: margin-top 2s ease-in 0.2s;             /*This is time required to change the property of the element. */
+    transition-delay: 1s;
+    margin: 0 auto;
+    margin-top: 10px;
+    transform: rotate(45deg);
+
+}
+
+div:hover{
+    background-color:pink;
+    margin-top: 400px;
+}
+#two{
+    background-color: rgb(20, 13, 235);
+    transform: scale(0.5);
+    box-shadow: 2px 2px 8px black;
+}

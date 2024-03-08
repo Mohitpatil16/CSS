@@ -1,0 +1,104 @@
+/* selector specificity:- 
+1) Id > Class > Element 
+2) more selectors > less selectors 
+3) If specificity is same => Cascading is applied.(Select the last css property.)
+4) Inline style has highest priority than id selector.  */
+
+*{
+    font-family:'Courier New';
+}
+
+h1,h3{
+    color:#b92b27  !important;    /* Whenever we write important in the front of any property then this property will be apply always.*/
+}
+
+#login{
+    background-color: white;
+}
+
+#signup{
+    background-color: #b92b27;
+    color: white    ;
+}
+
+.upvote{
+    background-color: green;
+    color: aliceblue;
+}
+
+/* descendent selector */
+
+.post a{
+    color: purple;
+    background-color: yellow;
+}
+
+nav ul li a{
+    color: hotpink  ;
+}
+
+p+h3{
+    text-decoration: underline;
+}
+
+.upvote + button{
+    background-color:cornflowerblue; 
+}
+div > input{
+    background-color: darksalmon;
+}
+
+input[type="text"]{
+    color: green;
+}
+
+input[type="password"]{
+    color:red;
+}
+
+input[type]{
+    background-color: ghostwhite;
+}
+
+/* #myId p{
+    color: green;
+} */
+
+div[id="myId"] p{
+    color:green;
+}
+
+button:hover{
+    background-color: black;
+    color:white;
+}
+
+button:active{
+    background-color:hotpink;
+    color:black;
+}
+
+p:active{
+    font-weight: bold;
+    color:green;
+}
+
+input[type="radio"]:checked + label{
+    color: red;
+    font-weight: bold; 
+}
+
+div:nth-of-type(2n){
+    background-color: blanchedalmond;
+}
+
+h1::first-letter{
+    color: black;   
+}
+p::first-line{
+    color: red;
+}
+
+p::selection{
+    background-color: rgb(218, 218, 14);
+}
